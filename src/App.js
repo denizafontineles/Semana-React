@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import Comentario from './Comentario'
+
+import dog from './img/dog.jpg';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Comentario
+      img={dog}
+      nome="Deniza"
+      titulo="Adorei sua performace"
+      comentario="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+  
+      />
+
+      <Comentario
+      nome="Jhenny"
+      titulo="Adorei sua performace"
+      comentario="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      />
+
     </div>
   );
 }
